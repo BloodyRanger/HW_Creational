@@ -73,12 +73,8 @@ public class Person {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(name + " " + surname + ", ");
-        if (hasAge()) {
-            sb.append("возраст " + age + ", ");
-        }
-        if (hasAddress()) {
-            sb.append("город проживания: " + address);
-        }
+        if (hasAge()) sb.append("возраст " + age + ", ");
+        if (hasAddress()) sb.append("город проживания: " + address);
         return sb.toString();
     }
 
